@@ -24,7 +24,7 @@ and don't forget to import css file.
 
 ```jsx
 import React from "react";
-import { QuizProvider } from "react-quiz-stepper";
+import { QuizProvider, QuestionType, LanguageMap } from "react-quiz-stepper";
 import "react-quiz-stepper/dist/index.css";
 
 // typings for question
