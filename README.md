@@ -24,19 +24,11 @@ and don't forget to import css file.
 
 ```jsx
 import React from "react";
-import { QuizProvider, QuestionType, LanguageMap } from "react-quiz-stepper";
+import { QuizProvider, Question } from "react-quiz-stepper";
 import "react-quiz-stepper/dist/index.css";
 
 // typings for question
-const questions = [
-  {
-    type: QuestionType,
-    questionId: number,
-    correctAnswerId: number,
-    questionInfo: Array<LanguageMap>,
-    optionsInfo: Array<{ id: number, languageInfo: Array<LanguageMap> }>,
-  },
-];
+const questions: Array<Question> = [];
 
 function App() {
   return (
