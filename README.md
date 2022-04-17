@@ -62,8 +62,7 @@ function QuizStepperDemo () {
       {state.questions.map((question) => ...)}
       {
         /**
-        * map through all questions and render
-        * appropriate input
+        * map through all questions and render appropriate input
         * (multi choice or single choice based on question.type)
         * only one question will be active depending on the step value
         */
