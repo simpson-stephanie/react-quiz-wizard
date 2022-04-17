@@ -1,11 +1,11 @@
-react-quiz-stepper is a react component that gives handy access to quiz data
-combined with stepper. Behind the scenes it uses context api, so data can be accessed
+react-quiz-wizard is a react component that gives handy access to quiz data
+combined with wizard. Behind the scenes it uses context api, so data can be accessed
 at any level in component tree. Most basic hooks are useQuiz and useStepper.
 
 ## Install
 
 ```sh
-npm i react-quiz-stepper
+npm i react-quiz-wizard
 ```
 
 ## Features
@@ -23,9 +23,9 @@ Wrap your app inside **QuizProvider**. (It asks for questions array to initializ
 and don't forget to import css file.
 
 ```jsx
-import React from 'react';
-import { QuizProvider } from 'react-quiz-stepper';
-import 'react-quiz-stepper/dist/index.css';
+import React from "react";
+import { QuizProvider } from "react-quiz-stepper";
+import "react-quiz-stepper/dist/index.css";
 
 const questions = [];
 
@@ -43,10 +43,10 @@ Now create your Stepper component and put it inside QuizProvider.
 
 ```jsx
 import React from 'react';
-import { Stepper, useQuiz } from 'react-quiz-stepper'
+import { Stepper, useQuiz } from 'react-quiz-stepper';
 
 function QuizStepperDemo () {
-  const { state } = useQuiz()
+  const { state } = useQuiz();
 
   return (
     <Stepper>
