@@ -24,8 +24,8 @@ and don't forget to import css file.
 
 ```jsx
 import React from "react";
-import { QuizProvider, Question } from "react-quiz-stepper";
-import "react-quiz-stepper/dist/index.css";
+import { QuizProvider, Question } from "react-quiz-wizard";
+import "react-quiz-wizard/dist/index.css";
 
 // typings for question
 const questions: Array<Question> = [];
@@ -44,7 +44,7 @@ Now create your Stepper component and put it inside QuizProvider.
 
 ```jsx
 import React from 'react';
-import { Stepper, useQuiz } from 'react-quiz-stepper';
+import { Stepper, useQuiz } from 'react-quiz-wizard';
 
 function QuizStepperDemo () {
   const { state } = useQuiz();
