@@ -27,7 +27,16 @@ import React from "react";
 import { QuizProvider } from "react-quiz-stepper";
 import "react-quiz-stepper/dist/index.css";
 
-const questions = [];
+// typings for question
+const questions = [
+  {
+    type: QuestionType,
+    questionId: number,
+    correctAnswerId: number,
+    questionInfo: Array<LanguageMap>,
+    optionsInfo: Array<{ id: number, languageInfo: Array<LanguageMap> }>,
+  },
+];
 
 function App() {
   return (
