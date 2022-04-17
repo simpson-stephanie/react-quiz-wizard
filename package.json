@@ -1,0 +1,49 @@
+{
+  "name": "react-quiz-wizard",
+  "version": "0.1.0",
+  "description": "A react component that provides handy access of quiz data combined with a wizard component.",
+  "private": false,
+  "author": {
+    "name": "Stephanie Simpson",
+    "email": "simpsonstephanie305@gmail.com"
+  },
+  "license": "MIT",
+  "module": "dist/esm/index.js",
+  "main": "dist/cjs/index.js",
+  "types": "dist/esm/index.js",
+  "files": [
+    "dist/"
+  ],
+  "bugs": {
+    "url": "https://github.com/simpson-stephanie/react-quiz-wizard/issues",
+    "email": "simpsonstephanie305@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simpson-stephanie/react-quiz-wizard"
+  },
+  "homepage": "https://github.com/simpson-stephanie/react-quiz-wizard/blob/master/README.md",
+  "keywords": [
+    "react",
+    "quiz",
+    "wizard"
+  ],
+  "peerDependencies": {
+    "react": ">=17.0.1",
+    "react-dom": ">=17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.13",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "copyfiles": "^2.4.1",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "copyfiles": "copyfiles -f ./src/packages/**/*.css dist",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
+    "compile": "rm -rf dist/ && npm run build:esm && npm run build:cjs && npm run copyfiles"
+  }
+}
